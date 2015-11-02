@@ -1,0 +1,77 @@
+html {
+	padding: 5px;
+	font-size: 10px;
+	vertical-align: center;
+}
+
+
+/*Font Size*/
+.font-size__bottom-header {
+	font-family: 'Merriweather', serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/*Row Container*/
+
+.row__container {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 960px;
+	min-width: 300px;
+	border: 1px solid black;
+	background-color: white;
+	padding: 1rem;
+}
+
+.row__container--topBox {
+	font-family: 'Merriweather', serif;
+	background-color: #C6C6C6;
+	text-align: center;
+	padding: 1rem 0;
+	border-top: 1px solid #AAA
+	margin: 0;
+}
+
+/*col Container*/
+
+.col__container {
+	width: 100%;
+	box-sizing: border-box;
+	max-width: 960px;
+	min-width: 300px;
+	background-color: white;
+	border: 1px solid blue;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+}
+
+.col-box {
+	width: 33.33%;
+	padding: 1rem;
+}
+
+/*button*/
+
+.button {
+	font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background: #C6C6C6;
+    color: black;
+    display: flex;
+    text-align: center;
+    padding: 12px;
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.button:hover {
+	background: grey;
+}
+
+
