@@ -1,34 +1,119 @@
 html {
-	padding: 5px;
-	font-size: 10px;
-	vertical-align: center;
+	font-size: 15px;
+	min-width: 500px;
+	margin: 0 auto;
+
 }
 
+p {
+	margin: 0.5rem 0 1.5rem 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+}
 
-/*Font Size*/
+.background-picture {
+	background: url(../images/coworking.jpg) center center no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+/*Font Size ==============================================================*/
 .font-size__bottom-header {
 	font-family: 'Merriweather', serif;
     font-size: 1.25rem;
     font-weight: bold;
 }
 
-/*Row Container*/
+.font-size__header {
+	font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: yellow;
+}
+
+.front-size__nav {
+	font-family: 'Merriweather', serif;
+	font-size: 0.75rem;
+	color: white;
+}
+
+.font-size__boxTitle {
+	font-family: Oswald, sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: black;
+}
+
+.front-size__footer {
+	font-family: 'Merriweather', serif;
+	font-size: 0.7rem;
+	color: white;
+}
+
+/*Float ===================================================================*/
+.float_left {
+	float: left;
+}
+
+.inline-block {
+	display: block;
+	border: 2px solid white;
+	padding: 10px;
+	background-color: pink;
+}
+
+.front-size__nav--uppercase {
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+/*Row Container ===========================================================*/
+.picture-block {
+	/*max-width: 1080px;*/
+	box-sizing: border-box;
+	height: 230px;
+	background: rgba(255,255,255,.8);
+	width: 35%;
+	max-width: 	450px;
+	min-width: 250px;
+	margin: 5rem 15% 5rem 0;
+	padding: 3%;
+	box-shadow: 0 0 5px rgba(0,0,0,.75);
+	float: right;
+}
 
 .row__container {
 	box-sizing: border-box;
 	width: 100%;
-	max-width: 960px;
-	min-width: 300px;
-	border: 1px solid black;
 	background-color: white;
-	padding: 1rem;
+}
+
+
+
+.row__container--nav {
+	background-color: black;
+	padding: 0.8rem 20%;
+	border-bottom: 2px solid yellow;
+}
+
+.row__container--footer {
+	background-color: black;
+	padding: 2rem 20%;
+	height: 6rem;
 }
 
 .row__container--topBox {
 	font-family: 'Merriweather', serif;
 	background-color: #C6C6C6;
 	text-align: center;
-	padding: 1rem 0;
+	padding: 1rem 20%;
 	border-top: 1px solid #AAA
 	margin: 0;
 }
@@ -38,18 +123,18 @@ html {
 .col__container {
 	width: 100%;
 	box-sizing: border-box;
-	max-width: 960px;
-	min-width: 300px;
 	background-color: white;
 	border: 1px solid blue;
 	display: flex;
 	flex-direction: row;
-	align-items: stretch;
+	align-items: flex-end;
+	padding: 0 20%;
 }
 
 .col-box {
 	width: 33.33%;
-	padding: 1rem;
+	padding: 2% 3%;
+	box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
 }
 
 /*button*/
@@ -60,18 +145,21 @@ html {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: bold;
+    text-align: center;
     background: #C6C6C6;
     color: black;
     display: flex;
-    text-align: center;
-    padding: 12px;
+    padding: 5px 12px;
     box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
     border-radius: 5px;
     width: 100%;
+    vertical-align: baseline;
+}
+
+.button--yellow {
+	background-color: yellow;
 }
 
 .button:hover {
 	background: grey;
 }
-
-

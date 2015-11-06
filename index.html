@@ -4,14 +4,37 @@
 	<meta charset="utf-8">
 	<title>Startup Matchmaker</title>
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oswald:700|Merriweather:700,700italic' rel='stylesheet' type='text/css'>
-	<link rel='stylesheet' href="css/main.css" type='text/css'>
 	<link rel='stylesheet' href="css/reset.css" type='text/css'>
-
+	<link rel='stylesheet' href="css/main.css" type='text/css'>
 </head>
+
 <body>
+
+	<section class="row__container row__container--nav">
+		<header class="font-size__header">Startup Matchmaker</header>
+		<nav class="front-size__nav">
+			<ul>
+				<div><a class="front-size__nav--uppercase float_left inline_block" href="developers.html">Developers</a></div>
+				<div><a class="front-size__nav--uppercase float_left inline_block" href="designers.html">Designers</a></div>
+				<div><a class="float_left inline_block" href="developers.html">How it Works</a></div>
+				<div><a class="float_left inline_block" href="team.html">Our Team</a></div>
+				<div><a class="float_left inline_block" href="blog.html">Blog</a></div>
+			</ul>
+		</nav>
+	</section>
+<!-- Top Bar in Grey Color -->
 	<section>
 		<div class="row__container row__container--topBox">Because two brains <del>taste</del> <ins>are</ins> better than one</div>
 	</section>
+<!-- This is the picture section -->
+	<section class="background-picture">
+		<div class="picture-block">
+			<h2 class="font-size__boxTitle">Meet Your Match!</h2>
+			<p>"Have a great idea for a product, but need help making it a reality? We're here to help. Startup Matchmaker is the best place for designers and developers to find each other"</p>
+			<button onclick="window.location='http://www.example.com';" class="button button--yellow">Create A Profile</button>
+		</div>
+	</section>
+<!-- This is the bottom selection box -->
 	<section class="col__container">
 		<div class="col-box">
 			<header>
@@ -20,7 +43,7 @@
 			<p>
 				Are you a Designer? Developer? Put yourself out there so that others can find you!
 			</p>
-			<button class="button">Sign Up Now</button>
+			<button onclick="window.location='http://www.example.com';" class="button">Sign Up Now</button>
 		</div>
 		<div class="col-box">
 			<header>
@@ -29,7 +52,7 @@
 			<p>
 				Looking for a fantastic develop to work with on the next big thing? Look no further
 			</p>
-			<button class="button">Start Your Search</button>
+			<button onclick="window.location='http://www.example.com';" class="button">Start Your Search</button>
 		</div>
 		<div class="col-box">
 			<header>
@@ -38,8 +61,13 @@
 			<p>
 				Need someone who can make a product intuitive and appealing? Get ready.
 			</p>
-			<button class="button">Start Your Search</button>
+			<button onclick="window.location='http://www.example.com';" class="button">Start Your Search</button>
 		</div>
 	</section>
+
+	<section class="row__container row__container--footer">
+		<footer class="front-size__footer">&#169;2013 Startup Matchmaker. Made in NY.</footer>
+	</section>
+
 </body>
 </html>
