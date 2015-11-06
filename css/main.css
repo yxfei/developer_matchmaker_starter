@@ -15,6 +15,20 @@ p {
 	font-weight: normal;
 }
 
+ul li {
+	display: inline;
+	padding: 0 0.4rem;
+}
+
+a:link { 
+	color: white; 
+	text-decoration: none 
+}
+ a:visited { 
+	color: white; 
+	text-decoration: none;
+}
+
 .background-picture {
 	background: url(../images/coworking.jpg) center center no-repeat;
 	background-size: cover;
@@ -24,7 +38,7 @@ p {
 /*Font Size ==============================================================*/
 .font-size__bottom-header {
 	font-family: 'Merriweather', serif;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -36,10 +50,27 @@ p {
 }
 
 .front-size__nav {
-	font-family: 'Merriweather', serif;
-	font-size: 0.75rem;
 	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	vertical-align: baseline;
 }
+
+.front-size__nav--uppercase {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.front-size__nav--topcase {
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
 
 .font-size__boxTitle {
 	font-family: Oswald, sans-serif;
@@ -56,8 +87,10 @@ p {
 }
 
 /*Float ===================================================================*/
-.float_left {
-	float: left;
+.inline-block__nav {
+	float: right;
+	width: auto;
+	color: white;
 }
 
 .inline-block {
@@ -65,12 +98,12 @@ p {
 	border: 2px solid white;
 	padding: 10px;
 	background-color: pink;
+	text-align: right;
 }
 
-.front-size__nav--uppercase {
-	font-size: 0.9rem;
-	text-transform: uppercase;
-	font-weight: bold;
+
+.font-size__nav--top {
+
 }
 
 
@@ -92,24 +125,29 @@ p {
 .row__container {
 	box-sizing: border-box;
 	width: 100%;
-	background-color: white;
-}
-
-
-
-.row__container--nav {
+	height: 4rem;
 	background-color: black;
-	padding: 0.8rem 20%;
+	padding: 1.5rem 20%;
 	border-bottom: 2px solid yellow;
 }
 
+.row__container--nav {
+	display: inline-block;
+	float: left;
+	padding: 0 5% 0 0;
+}
+
 .row__container--footer {
+	box-sizing: border-box;
+	width: 100%;
 	background-color: black;
 	padding: 2rem 20%;
 	height: 6rem;
 }
 
 .row__container--topBox {
+	box-sizing: border-box;
+	width: 100%;
 	font-family: 'Merriweather', serif;
 	background-color: #C6C6C6;
 	text-align: center;
@@ -124,7 +162,7 @@ p {
 	width: 100%;
 	box-sizing: border-box;
 	background-color: white;
-	border: 1px solid blue;
+	border: 1px solid white;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
@@ -163,3 +201,12 @@ p {
 .button:hover {
 	background: grey;
 }
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
